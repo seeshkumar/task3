@@ -1,0 +1,119 @@
+
+.empCard {
+    list-style-type: none;
+    border: 1px solid #e9e8e8;
+    height: 80px;
+    overflow: auto;
+    background-color: #e9e8e8;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+  }
+  
+  .empCard::-webkit-scrollbar {
+      width: 0.1vw;
+      height: 0.1vw;
+    }
+  .empCard::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+  .empCard::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+  }
+  
+  
+  .cardContent {
+    justify-content: space-around;
+    cursor: alias;
+  }
+  
+  .empCard img {
+    height: 4vw;
+    width: 4vw;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .name {
+    display: flex;
+    gap: 3%;
+    font-size: 1vw;
+  }
+  
+  .jobTitle {
+    font-size: 1vw;
+  }
+  
+  .department {
+    font-size: 1vw;
+  }
+  
+  .links {
+    display: flex;
+    padding-top: 0.5vw;
+    list-style: none;
+    z-index: 0;
+  }
+  
+  .links a {
+    margin-right: 0.7vw;
+    font-size: 1vw;
+    list-style: none;
+    text-decoration: none;
+    color: #969595;
+    padding-right: 0.2vw;
+  }
+
+@media screen and (min-width: 1400px) {
+    .empCard{
+        height: 120px;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .empCard{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+ 
+  .empCard {
+    min-height: 15vw;
+    grid-template-columns: 28% 68%;
+    grid-gap:4%;
+  }
+
+  .empCard img {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .name {
+    display: flex;
+    gap: 3%;
+    font-size: 2vw;
+  }
+
+  .jobTitle {
+    font-size: 2vw;
+  }
+
+  .department {
+    font-size: 2vw;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .links a {
+    font-size: 3vw;
+  }
+
+}

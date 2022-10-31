@@ -1,0 +1,26 @@
+main {
+    position: absolute;
+    top: 9vw; /*height of header*/
+    padding: 0px 1vw;
+    width: 97%;
+    z-index: 0;
+  }
+  .pageContent {
+    width: 100%;
+    margin-top: 1vw;
+    display: flex;
+    margin-bottom: 3vw;
+  }
+  app-stats-div{
+    flex:1;
+  }
+  app-emp-directory{
+    flex:4;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    main{
+      top:12vw;
+    }
+}
+  

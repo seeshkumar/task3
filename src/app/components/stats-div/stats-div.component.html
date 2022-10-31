@@ -1,0 +1,33 @@
+<aside #myIdentifier class="stats" id="stats" (click)="func()" [(style.height)]="statsDivHeight">
+ 
+    <article class="stat">
+      <div class="statHead"><h1 class="statTitle">Department</h1>
+        <button class="sortBtn" id="departmentSortBtn"  (click)="makeFrequencyMaps();depSort()">Sort<span class="sortSym" id="departmentSortSymb">&uarr;</span></button>
+      </div>
+      <ul class="statSubs" id="departmentStat">
+        <li *ngFor="let item of departmentArr">{{item}} ({{departmentMap.get(item)}})</li>
+      </ul>
+    </article>
+
+    <article class="stat">
+      <div class="statHead"><h1 class="statTitle">Office</h1>
+        <button class="sortBtn" id="officeSortBtn" (click)="offSort()">Sort<span class="sortSym" id="officeSortSymb">&uarr;</span></button>
+      </div>
+      <ul class="statSubs" id="officeStat">
+        <li *ngFor="let item of officeArr">{{item}} ({{officeMap.get(item)}})</li>
+      </ul>
+    </article>
+
+    <article class="stat">
+      <div class="statHead"><h1 class="statTitle">Job Title</h1>
+        <button class="sortBtn" id="jobTitleSortBtn"  (click)="jobSort()">Sort<span class="sortSym" id="jobTitleSortSymb">&uarr;</span></button>
+      </div>
+      <ul class="statSubs" id="jobTitleStat">
+        <li *ngFor="let item of jobTitleArr">{{item}} ({{jobTitleMap.get(item)}})</li>
+      </ul>
+    </article>
+
+  </aside>
+  <button id="viewMoreBtn" #viewMoreBtn (click)="viewMore()">
+    <b >view more</b>
+  </button>

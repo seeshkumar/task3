@@ -1,0 +1,62 @@
+<div class="empDirectory">
+    <section class="searchArea">
+
+      <section class="letterIndex">
+        <button class="letter" (click)="letterClear()" ><i class="fas fa-user-alt"></i></button>
+        <button class="letter" *ngFor="let letter of letters;let ind = index" id='{{"letter"}}{{ind}}' (click)="letterIndex(letter,'letter'+ind)">{{letter}}</button>
+    </section>
+
+
+      <section class="filtersDiv">
+        
+        <section class="searchMid">
+          <div id="search">
+            Search: 
+            <input type="text"
+                #searchBar name="searchBar"
+                id="searchBar" class="fa" 
+                [(ngModel)]="searchBarValue"
+                placeholder="&#xF002;  Enter any keyword"  
+                (keyup)='searchFunc()' 
+                style="font-family: Arial, FontAwesome"
+            />
+
+            <button id="clear" onclick="clear()" (click)="clear()">clear</button>
+          </div>
+        </section>
+
+        <section class="filter">
+          <label for="filterBy">Filter by: </label>
+          <select name="filterBy" #filterBy id="filterBy" [(ngModel)]="filterByValue">
+            <option value="name">Preferred Name</option>
+            <option value="department">Department</option>
+            <option value="office">Office</option>
+            <option value="jobTitle">Job Title</option>
+          </select>
+        </section>
+
+        <div class="addEmployee">
+          <button id="addEmployeeBtn" onclick="openPopup(-1)">
+            <b>Add Employee</b>
+          </button>
+        </div>
+
+      </section>
+
+    </section>
+    
+    <section class="noteDiv">
+      <p id="note">
+        <b>Note:</b> Please use the advanced filter options to refine your results.
+      </p>
+      <button class="sortBtn" id="empSortBtn" (click)="empSort()">Sort<span class="sortSym" id='empSortSymb' >{{empAsec?'&uarr;':'&darr;'}}</span></button>
+    </section>
+
+    <section class="empContainer">
+      <ul id="empList">
+        <div *ngIf="filteredEmployees.length==0">No Employees Found.</div>
+        <app-emp-card *ngFor="let employee of filteredEmployees" [employee]="employee"></app-emp-card>
+      </ul>    
+    </section>
+
+  </div>

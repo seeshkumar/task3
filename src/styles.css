@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+  }
+body{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+.sortBtn{
+  background-color:#e9e8e8;
+  color: black;
+  border: 2px;
+  border-radius: 0.5vw;
+  padding: 0vw 0.5vw;
+  padding-bottom: 0.3vw;
+  width: fit-content;
+  font-size: 1vw;
+}
+
+.sortBtn:active{
+  background-color: white;
+}
+.sortSym{
+  font-size: 1.5vw;
+  color:black;
+}
+
+
+
+

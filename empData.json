@@ -1,0 +1,54 @@
+{
+    "employees": [
+        {
+            "id"  : "2",
+            "img" : "../assets/pics/empPic3.jpg",
+            "firstName" : "Jonathon",
+            "lastName" :"Smith",
+            "email" : "Jhon@fake.com",
+            "jobTitle" : "Product Manager",
+            "office" : "India",
+            "department" : "IT",
+            "phoneNumber" : 10000,
+            "skype" : "john@skype"
+        
+        },{
+        "id"  : "0",
+        "img" : "../assets/pics/empPic1.jpg",
+        "firstName" : "Anthonny",
+        "lastName" :"morris",
+        "email" : "anthony@fake.com",
+        "jobTitle" : "SharePoint Practice Head",
+        "office" : "Seattle",
+        "department" : "IT",
+        "phoneNumber" : 10000,
+        "skype" : "anthony@skype"
+    
+    },
+    
+    {   "id"  : "1",
+        "img" : "../assets/pics/empPic2.jpg",
+        "firstName" : "Franklin",
+        "lastName" :"Humark",
+        "email" : "franklin@fake.com",
+        "jobTitle" : "Network Engineer",
+        "office" : "Seattle",
+        "department" : "IT",
+        "phoneNumber" : 10000,
+        "skype" : "franklin@skype"
+    
+    },{
+        "id"  : "3",
+        "img" : "../assets/pics/empPic1.jpg",
+        "firstName" : "Oliva",
+        "lastName" :"WatsonS",
+        "email" : "oliva@fake.com",
+        "jobTitle" : "UI Designer",
+        "office" : "Seattle",
+        "department" : "UX",
+        "phoneNumber" : 10000,
+        "skype" : "oliva@skype"
+    
+    }
+    ]
+  }

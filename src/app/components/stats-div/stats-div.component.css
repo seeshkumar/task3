@@ -1,0 +1,75 @@
+
+  .stats {
+    height:'fit-content';
+    overflow: hidden;
+  }
+  
+  .stat {
+    padding: 1vw;
+    display: block;
+  }
+  
+  .statHead{
+    display: flex;
+    gap:1vw;
+    align-items: center;
+  }
+  
+  
+  .statTitle {
+    font-size: 1.5vw;
+    font-weight: 600;
+  }
+  
+  
+  
+  .statSubs {
+    font-size: 1vw;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0.5vw;
+  }
+  .statSubs li{
+    margin-bottom: 0.5vw;
+    overflow-wrap: anywhere;
+  }
+  
+  #viewMoreBtn{
+      background-color: transparent;
+      border:0px;
+      color:#00b1fc;
+      padding-left: 2.5vw;
+    }
+  
+
+
+    @media screen and (max-width: 1000px) {
+  
+      .statTitle {
+        font-size: 2vw;
+      }
+      .statSubs {
+        font-size: 1.5vw;
+      }
+     
+      .statTitle {
+        font-size: 3vw;
+      }
+    
+      .statSubs li {
+        font-size: 2vw;
+        font-weight: 400;
+        height: fit-content;
+        margin-top: 2vw;
+    
+      }
+     
+    .sortBtn{
+      font-size: 2vw;
+    }
+    .sortSym{
+      font-size: 2.5vw;
+    }
+}
+    

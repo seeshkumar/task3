@@ -1,0 +1,33 @@
+<li class="empCard">
+  <img alt="img" src={{employee.img}}>
+  
+  <div>
+      <div class="cardContent" ><!-- onclick="openPopup({{employee.id}})-->
+          <div class="name">
+              <h3 class="firstName">{{employee.firstName}}</h3>
+              <h3 class="lastName">{{employee.lastName}}</h3>
+          </div>
+          <p class="jobTitle">{{employee.jobTitle}}</p>
+          <p class="department">{{employee.department}} Department</p>
+      </div>
+  
+      <div class="links">
+              <a href="tel: {{employee.phoneNumber}} " class="call">
+                  <i class="fa fa-phone"></i>
+              </a>
+              <a href="mailto: {{employee.email}}" class="mail">
+                  <i class="fa fa-envelope"></i>
+              </a>
+              <a href="skype:" class="skype">
+                  <i class="fa fa-telegram"></i>
+              </a>
+              <a href="#" class="star">
+                  <span class="fa fa-star checked"></span>
+              </a>
+              <a href="#" class="heart">
+                  <i class="fa fa-heart"></i>
+              </a>
+      </div>
+    </div>
+  
+</li>

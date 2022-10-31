@@ -1,0 +1,96 @@
+
+  img {
+    padding: 0px 0.5vw;
+  }
+
+.nav {
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2vw;
+  }
+  
+  .logo {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  #logoPic {
+    height: 4vw;
+    align-self: center;
+  }
+  
+  .logo h1 {
+    margin-bottom: 1vw;
+    font-size: 3vw;
+  }
+  
+  .pageTitle {
+    flex: 4;
+    margin-bottom: 1vw;
+    padding-left: 1vw;
+  }
+  
+  .pageTitle h1 {
+    font-size: 2.5vw;
+    color: #00b1fc;
+    font-weight: 400;
+  }
+  
+  .pageTitle p {
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  
+  .empGreet {
+    flex: 4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    margin-bottom: 1vw;
+  }
+  
+  .empGreet h1 {
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  
+  #welcome {
+    color: #00b1fc;
+  }
+  
+  #currentEmpPic {
+    height: 5vw;
+    width: 5vw;
+  }
+  @media screen and (max-width: 1000px) {
+  
+    .nav {
+      height: 10vw;
+    }
+    #logoPic {
+      height: 10vw;
+    }
+    .logo h1 {
+      font-size: 6vw;
+    }
+    .pageTitle h1 {
+      font-size: 3vw;
+    }
+    .pageTitle p {
+      font-size: 2vw;
+    }
+    .empGreet h1 {
+      font-size: 2vw;
+      font-weight: 400;
+    }
+    #currentEmpPic {
+      height: 10vw;
+      width: 10vw;
+    }
+   
+  }
+  
